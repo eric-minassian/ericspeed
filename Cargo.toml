@@ -1,6 +1,14 @@
 [package]
 name = "ericspeed"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "A terminal-based internet speed test"
 
 [dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["stream"] }
+anyhow = "1"
+futures = "0.3"
+rand = "0.8"
